@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">pic-copy</string>
+    <string name="button_start">开始监听</string>
+    <string name="button_started">暂停</string>
+</resources>
