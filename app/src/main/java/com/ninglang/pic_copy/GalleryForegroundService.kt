@@ -27,9 +27,9 @@ class GalleryForegroundService : Service() {
         println("here")
         createNotificationChannel()
         startForeground(1, buildNotification())
-        galleryObserver = GalleryContentObserver(this) { latestImageUri ->
+        galleryObserver = GalleryContentObserver(this) { latestImageUri1 ->
 //            println("latestImageUriForeGround:"+latestImageUri)
-            copyToClipboard(latestImageUri)
+            copyToClipboard(latestImageUri1)
         }
         contentResolver.registerContentObserver(
             MediaStore.Images.Media.EXTERNAL_CONTENT_URI,
